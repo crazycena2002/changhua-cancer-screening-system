@@ -20,7 +20,7 @@ NCHU-11507-彰化縣衛生局癌症篩檢活動預約系統
 
 ### 1. 後端
 
-先在資料庫建立 `nchu_taichung_e_services`（名稱可於 `backend/.env` 的 `DB_DATABASE` 調整），再執行：
+先在資料庫建立 `nchu_changhua_e_screening`（名稱可於 `backend/.env` 的 `DB_DATABASE` 調整），再執行：
 
 ```sh
 cd backend
