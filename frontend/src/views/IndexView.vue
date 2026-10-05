@@ -1,13 +1,9 @@
-<script setup></script>
-
-<template>
-  <div>
-    <h1>You did it!</h1>
-    <p>
-      Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-      documentation
-    </p>
-  </div>
-</template>
-
-<style scoped></style>
+<script setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+import PublicHomeView from '@/views/PublicHomeView.vue'
+import AdminDashboardView from '@/views/AdminDashboardView.vue'
+const route = useRoute()
+const isAdmin = computed(() => route.name === 'admin')
+</script>
+<template><AdminDashboardView v-if="isAdmin" /><PublicHomeView v-else /></template>

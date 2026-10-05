@@ -1,0 +1,46 @@
+/* 首頁、預約、登入及後台共用的溫潤自然色系。 */
+.natural-surface {
+  --natural-background: #f8f6f0;
+  --natural-paper: #fffdf8;
+  --natural-sage: #e7ecdf;
+  --natural-border: #d8ddce;
+  --natural-forest: #2f493a;
+  --natural-accent: #526c4b;
+  --natural-muted: #59695a;
+  background-color: var(--natural-background);
+  color: var(--natural-forest);
+}
+.natural-surface header { background-color: var(--natural-paper); }
+.natural-surface .card {
+  background: var(--natural-paper);
+  border: 0;
+}
+.natural-surface .field {
+  min-width: 0;
+  min-height: 48px;
+  font-size: 16px;
+  background: var(--natural-paper);
+  caret-color: var(--natural-accent);
+}
+.natural-surface .field::placeholder { color: #65725f; }
+.natural-surface .field[readonly] { background-color: #efeee5; }
+.natural-surface .field:disabled { background-color: #efeee5; color: #59695a; opacity: 1; -webkit-text-fill-color: #59695a; cursor: default; }
+.booking-flow :is(.btn-primary,.btn-secondary) { min-height: 56px; font-size: 18px; font-weight: 400; line-height: 1.6; padding: 12px 20px; }
+.booking-flow .label { font-size: 16px; font-weight: 400; }
+.booking-flow .field { min-height: 54px; font-size: 18px; }
+.booking-flow :is(.booking-choice__title,.screening-option > span:first-child) { font-size: 24px; font-weight: 400; }
+.booking-flow .booking-choice__action { font-size: 18px; min-height: 56px; }
+.booking-flow button:disabled { cursor: not-allowed; opacity: .6; }
+.booking-flow .search-tab { min-height: 48px; font-size: 18px; }
+.booking-flow .result-option > span:first-child { font-size: 20px; }
+.booking-flow button.text-sm { min-height: 48px; font-size: 16px; }
+.booking-flow .booking-choice > span.text-xl { font-size: 24px; }
+.booking-flow .screening-suggestion > span:last-child { white-space: nowrap; }
+@media(max-width:639px) { .booking-flow .screening-suggestion { flex-direction: column; align-items: flex-start; gap: 10px; } }
+.natural-surface input[type="checkbox"] { accent-color: var(--natural-accent); }
+.natural-surface .btn-primary, .natural-surface .btn-secondary { min-height: 48px; }
+.natural-surface .btn-primary:hover { transform: none; }
+.natural-surface button { -webkit-tap-highlight-color: rgba(82,108,75,.12); }
+.natural-surface :is(h1,h2,h3) { text-wrap: balance; }
+.natural-surface :is(input,select,button):focus-visible { outline-color: var(--natural-accent); }
+.natural-surface ::selection { background: #dbe4ce; color: #2f493a; }
